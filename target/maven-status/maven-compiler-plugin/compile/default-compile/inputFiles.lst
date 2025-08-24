@@ -1,1 +1,14 @@
 /home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/App.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/model/Curso.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/model/CursoProfesor.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/model/Estudiante.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/model/Facultad.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/model/Inscripcion.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/model/Persona.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/model/Profesor.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/model/Programa.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/service/CursosProfesores.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/service/InscripcionesPersonas.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/service/Servicios.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/service/TestCursosProfesores.java
+/home/b17/tecno-avanzadas/lab1/src/main/java/com/brayan/miapp/service/TestInscripcionesPersonas.java

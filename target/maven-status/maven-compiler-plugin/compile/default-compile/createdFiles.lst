@@ -1,1 +1,14 @@
+com/brayan/miapp/service/TestInscripcionesPersonas.class
+com/brayan/miapp/model/Profesor.class
+com/brayan/miapp/service/TestCursosProfesores.class
+com/brayan/miapp/model/Curso.class
+com/brayan/miapp/model/Persona.class
+com/brayan/miapp/model/Inscripcion.class
+com/brayan/miapp/service/CursosProfesores.class
+com/brayan/miapp/service/InscripcionesPersonas.class
 com/brayan/miapp/App.class
+com/brayan/miapp/model/CursoProfesor.class
+com/brayan/miapp/model/Programa.class
+com/brayan/miapp/service/Servicios.class
+com/brayan/miapp/model/Facultad.class
+com/brayan/miapp/model/Estudiante.class

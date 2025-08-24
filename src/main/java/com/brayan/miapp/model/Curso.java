@@ -1,10 +1,26 @@
 package com.brayan.miapp.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "cursos")
 public class Curso {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    
+    @Column(nullable = false, length = 100)
     private String nombre;
+    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "programa_id", nullable = false)
     private Programa programa;
+    
+    @Column(nullable = false)
     private boolean activo;
+
+    // Constructor por defecto requerido por JPA
+    public Curso() {}
 
     public Curso(int id, String nombre, Programa programa, boolean activo) {
         this.id = id;
