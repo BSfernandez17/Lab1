@@ -1,6 +1,14 @@
 package com.brayan.miapp.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "inscripciones")
@@ -11,17 +19,17 @@ public class Inscripcion {
     
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "curso_id", nullable = false)
-    public Curso curso;
+    private Curso curso;
     
     @Column(nullable = false)
-    public int año;
+    private int año;
     
     @Column(nullable = false)
-    public int semestre;
+    private int semestre;
     
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "estudiante_id", nullable = false)
-    public Estudiante estudiante;
+    private Estudiante estudiante;
 
     // Constructor por defecto requerido por JPA
     public Inscripcion() {}
@@ -31,6 +39,47 @@ public class Inscripcion {
         this.curso = curso;
         this.año = año;
         this.semestre = semestre;
+        this.estudiante = estudiante;
+    }
+
+    // -------- Getters y Setters --------
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
+    public int getAño() {
+        return año;
+    }
+
+    public void setAño(int año) {
+        this.año = año;
+    }
+
+    public int getSemestre() {
+        return semestre;
+    }
+
+    public void setSemestre(int semestre) {
+        this.semestre = semestre;
+    }
+
+    public Estudiante getEstudiante() {
+        return estudiante;
+    }
+
+    public void setEstudiante(Estudiante estudiante) {
         this.estudiante = estudiante;
     }
 
